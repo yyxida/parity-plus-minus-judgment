@@ -22,7 +22,7 @@ int main()
 			break;
 		}
 		system("cls");                        /* 清空显示区域 */
-		switch (abs(x) % 2)
+		switch (abs(x) % 2)					   /* 对绝对值进行判断 */
 		{
 		case 0:
 			cout << "x为偶的";
