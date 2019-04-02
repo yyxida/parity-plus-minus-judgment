@@ -4,6 +4,8 @@ using namespace std;
 int main()
 {
 	int	x;
+	const char* temp, * temp2;
+	//const char* temp2;
 	cout << "请输入x的值: " << endl;
 	cin >> x;
 	while (cin.fail())            /* 判断输入是否为数字 */
@@ -25,25 +27,29 @@ int main()
 	switch (abs(x) % 2)					   /* 对绝对值进行判断 */
 	{
 	case 0:
-		cout << "x为偶的";
+		temp = "偶";
 		break;
 	case 1:
-		cout << "x为奇的";
+		temp = "奇";
 		break;
 	}
 	if (x < 0)
 	{
-		cout << "负数" << endl;
+		temp2 = "负";
 	}
 	else if (x == 0)
 	{
-		cout << "非正非负数" << endl;
+		//cout << "非正非负数" << endl;
+		temp2 = "非正非负";
 
 	}
 	else
 	{
-		cout << "正数" << endl;
+		//cout << "正数" << endl;
+		temp2 = "正";
 	}
+	cout << "x为" << temp << "的" << temp2 << "数" << endl;
 	system("pause");
+
 }
 
